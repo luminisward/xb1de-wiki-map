@@ -1,0 +1,65 @@
+div[class^="xb1map"] {
+  background-color: #3c3228;
+  background-size: cover;
+  margin: 0.5em;
+  width: auto;
+
+  input {
+    margin: initial;
+  }
+
+  .collection-tooltip {
+    table {
+      border-collapse: collapse;
+      margin: 0;
+      tr td {
+        padding: 1px 5px;
+      }
+    }
+  }
+
+  .collection-icon {
+    border-radius: 50%;
+    background-color: #c9fcf6;
+    box-shadow: 0 0 15px #00dbfc;
+    // border: 2px solid #fdff98;
+    // box-sizing: border-box;
+  }
+
+  .collection-current-icon {
+    background-color: #ffdee4;
+    box-shadow: 0 0 15px #fd183f;
+  }
+
+  .label {
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    text-align: center;
+    color: #fff;
+    padding: 0px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-shadow:1px 1px #000;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+
+    &:hover {
+      box-shadow: 0px 0px 5px white;
+      background-color: #e9e4de;
+      color: black;
+      text-shadow: none;
+      z-index: 1;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .landmark {
+    border-radius: 12px;
+    padding: 1px 15px;
+    background-color: #e9e4de;
+  }
+
+}
