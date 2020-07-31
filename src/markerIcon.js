@@ -10,6 +10,10 @@ export const collectionCurrent = L.divIcon({
   className: 'collection-icon collection-current-icon',
   iconSize: [12, 12]
 })
+export const enemyIcon = L.divIcon({
+  className: 'enemy-icon',
+  iconSize: [8, 8]
+})
 export const location = L.divIcon({
   iconSize: [0, 0]
 })

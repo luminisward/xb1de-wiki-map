@@ -105,7 +105,7 @@ class Xb1map extends L.Map {
     this.fitBounds(xyBounds(this.bounds))
   }
 
-  marker (point, options, tooltip = '') {
+  marker (point, options, tooltip) {
     const coordinate = xy([point.posX - this.XOffest, -point.posZ])
 
     const marker = L.marker(coordinate, {
@@ -120,12 +120,14 @@ class Xb1map extends L.Map {
         offset: L.point(0, 14)
       }).setContent(tooltip)
     }
-    marker.bindTooltip(tooltip)
+    if (tooltip) {
+      marker.bindTooltip(tooltip)
+    }
 
     return marker
   }
 
-  addMarker (point, options, tooltip = '') {
+  addMarker (point, options, tooltip) {
     const marker = this.marker(point, options, tooltip)
     this.addLayer(marker)
     return marker

@@ -6,6 +6,7 @@ const apiUrl = devMwHost + '/api.php'
 const depolyTable = {
   'xb1map.js': 'Gadget:xb1map.js',
   'collection.js': 'Gadget:xb1mapCollection.js',
+  'enemy.js': 'Gadget:xb1mapEnemy.js',
   'xb1map.css': 'Gadget:xb1map.css'
 }
 
