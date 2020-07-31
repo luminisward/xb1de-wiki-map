@@ -1,5 +1,4 @@
 import $ from 'jquery'
-import '../main.scss'
 import L from 'leaflet'
 
 import { xb1map } from '../xb1map'
@@ -9,7 +8,7 @@ import { setContainerHeight, pointsFilterByLevel, dataApi, appendLevel } from '.
 async function draw (element) {
   // 高亮道具名
   const highlightCollection = $(element).data('highlightCollection')
-  const mapName = $(element).data('mapName').split(',')
+  const mapName = $(element).data('mapName')
 
   // 创建L地图对象
   const map = await xb1map(element, mapName)

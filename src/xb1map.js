@@ -1,4 +1,5 @@
 import L from 'leaflet'
+import './main.scss'
 import { pointsFilterByLevel, dataApi } from './utils'
 import { location as locationIcon, landmark as landmarkIcon } from './markerIcon'
 
